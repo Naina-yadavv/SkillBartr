@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile - SkillBartr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 font-poppins">
+    <header class="bg-white shadow-sm py-4 sticky top-0">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-2xl font-bold text-blue-600 animate-pulse">SkillBartr</h1>
+                <span class="text-sm font-semibold text-gray-600">by Runtime Terrors</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Create Your Profile</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" id="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">College/University</label>
+                    <input type="text" id="college" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Your College">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Skills You Have</label>
+                    <div id="skillsHave" class="space-y-2">
+                        <div class="flex space-x-2">
+                            <input type="text" class="skill-input w-full p-3 border rounded-lg" placeholder="Skill (e.g., Python)">
+                            <select class="skill-level p-3 border rounded-lg">
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="addSkillHave" class="text-blue-600 hover:underline mt-2">+ Add Skill</button>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Skills You Seek</label>
+                    <div id="skillsSeek" class="space-y-2">
+                        <div class="flex space-x-2">
+                            <input type="text" class="skill-input w-full p-3 border rounded-lg" placeholder="Skill (e.g., Graphic Design)">
+                            <select class="skill-level p-3 border rounded-lg">
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="addSkillSeek" class="text-blue-600 hover:underline mt-2">+ Add Skill</button>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Bio</label>
+                    <textarea id="bio" class="w-full p-3 border rounded-lg" rows="4" placeholder="Tell us about yourself..."></textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Profile Picture</label>
+                    <input type="file" id="profilePic" accept="image/*" class="w-full p-3 border rounded-lg">
+                </div>
+                <button id="submitProfile" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 w-full">Create Profile</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
