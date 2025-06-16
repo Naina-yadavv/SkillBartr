@@ -1,10 +1,11 @@
 /* Custom styles to enhance Tailwind */
 body {
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1E1A3C, #2A265F);
 }
 
 header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 input, select, textarea {
@@ -17,13 +18,13 @@ button {
 
 #searchResults div {
     padding: 10px;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #00D4FF;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
 
 #searchResults div:hover {
-    background-color: #f3f4f6;
+    background-color: #3A356A;
 }
 
 /* Smooth scroll for anchor links */
@@ -31,13 +32,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Hero image animation */
-img[src*="unsplash"] {
-    transition: transform 0.3s ease;
-}
-
-img[src*="unsplash"]:hover {
-    transform: scale(1.02);
+/* Neon glow effect */
+.neon-glow {
+    box-shadow: 0 0 10px #FF00E5, 0 0 20px #00D4FF;
 }
 
 /* Team name animation */
@@ -52,4 +49,13 @@ img[src*="unsplash"]:hover {
     50% {
         opacity: 0.8;
     }
+}
+
+/* Image hover effect */
+img[src*="unsplash"] {
+    transition: transform 0.3s ease;
+}
+
+img[src*="unsplash"]:hover {
+    transform: scale(1.02);
 }
