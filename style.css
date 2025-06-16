@@ -1,0 +1,55 @@
+/* Custom styles to enhance Tailwind */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input, select, textarea {
+    transition: all 0.3s ease;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+#searchResults div {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#searchResults div:hover {
+    background-color: #f3f4f6;
+}
+
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero image animation */
+img[src*="unsplash"] {
+    transition: transform 0.3s ease;
+}
+
+img[src*="unsplash"]:hover {
+    transform: scale(1.02);
+}
+
+/* Team name animation */
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
