@@ -3,18 +3,18 @@ Project by Runtime Terrors
 
 Level Up Your Skills. Trade Knowledge.A platform for college students to barter skills for free.
 
-📖 Overview
+📖 Overview:
 SkillBartr connects college students to trade skills like coding, design, or music—without spending a penny. Create a profile, find barter partners, and grow your expertise in a vibrant community.
 
 ✨ Features
-  🛠️ Skill Trading: Swap skills with peers effortlessly.
+ 🛠️ Skill Trading: Swap skills with peers effortlessly.
   👤 Profile Creation: Build a LinkedIn-style profile with skills, levels, and bio.
   🔍 Search: Find users by name, college, or skill.
   ⭐ Ratings & History: View ratings and past barters for trust.
   📩 Skill Requests: Request skills and approve/deny trades.
   📱 Responsive Design: Sleek, mobile-friendly UI with Tailwind CSS.
   🎨 Visuals: Unsplash images, Heroicons, and Poppins font for a modern look.
-
+  
 🛠️ Tech Stack
   Frontend: HTML5, Tailwind CSS, Vanilla JS
   Tools: Git, VS Code
@@ -34,8 +34,6 @@ skillbartr/
 ├── styles.css              # Custom CSS
 ├── script.js               # JavaScript
 └── README.md               # Documentation
-
-
 Check GitHub Issues for tasks or suggest new ideas!
 
 📜 License
