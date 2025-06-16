@@ -1,15 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SkillBartr</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBartr - Level Up Your Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <h1>Welcome to SkillBartr 🚀</h1>
-  <p>Where skills are the currency. Let's trade knowledge!</p>
+<body class="bg-gray-50 font-poppins">
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-10">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-2xl font-bold text-blue-600 animate-pulse">SkillBartr</h1>
+                <span class="text-sm font-semibold text-gray-600">by Runtime Terrors</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-gray-700">
+                    <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+                    <li><a href="#how-it-works" class="hover:text-blue-600">How It Works</a></li>
+                    <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <script src="script.js"></script>
+    <!-- Hero Section -->
+    <section id="home" class="bg-blue-50 py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-gray-800 mb-4">Level Up Your Skills. Trade Knowledge.</h2>
+            <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">SkillBartr lets college students swap skills and learn for free. Connect, trade, grow.</p>
+            <a href="profile-creation.html" class="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700">Join the Bartr</a>
+            <img src="https://source.unsplash.com/random/800x400/?students,collaboration" alt="Students collaborating" class="mt-10 mx-auto rounded-lg shadow-lg max-w-3xl">
+        </div>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="py-10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-md mx-auto">
+                <input type="text" id="searchInput" placeholder="Search by name, college, or skill..." class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                <div id="searchResults" class="mt-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Why SkillBartr?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Swap Skills</h3>
+                    <p class="text-gray-600">Trade your expertise with peers effortlessly.</p>
+                </div>
+                <div class="text-center">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Build Profile</h3>
+                    <p class="text-gray-600">Showcase your skills in a personalized profile.</p>
+                </div>
+                <div class="text-center">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Join Communities</h3>
+                    <p class="text-gray-600">Connect with peers and join skill challenges.</p>
+                </div>
+                <div class="text-center">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Track Growth</h3>
+                    <p class="text-gray-600">Monitor your progress and skill development.</p>
+                </div>
+            </div>
+            <!-- Profile Example -->
+            <div class="mt-10 max-w-sm mx-auto border p-4 rounded-lg shadow-lg bg-gray-50">
+                <img src="https://source.unsplash.com/random/150x150/?portrait" alt="Profile Picture" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h4 class="text-lg font-bold text-center">Alex Carter</h4>
+                <p class="text-sm text-gray-600 text-center">4.8 ★★★★★</p>
+                <p class="text-sm text-center">Data Science, NYU</p>
+                <p class="text-sm mt-2 text-center"><strong>Skills:</strong> Python (Advanced), SQL (Intermediate)</p>
+                <p class="text-sm text-center"><strong>Seeks:</strong> UI/UX Design, Machine Learning</p>
+                <a href="profile-view.html" class="block text-blue-600 hover:underline text-center mt-2">View Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Create Profile</h3>
+                    <p class="text-gray-600">Set up your profile with skills you offer and want to learn.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Find Partners</h3>
+                    <p class="text-gray-600">Search for students to trade skills and start learning.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Barter & Grow</h3>
+                    <p class="text-gray-600">Swap lessons, track progress, and level up together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Our Mission</h2>
+            <p class="text-center max-w-2xl mx-auto text-gray-600">SkillBartr is here to break learning barriers by building a community where college students trade skills for free. We believe knowledge should be accessible to all, and we’re making it happen one barter at a time.</p>
+            <img src="https://source.unsplash.com/random/600x300/?team" alt="Team" class="mt-10 mx-auto rounded-lg shadow-lg max-w-2xl">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-10">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-lg mb-4">SkillBartr: Level Up Your Skills. Trade Knowledge.</p>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-300">Terms of Service</a>
+                <a href="#" class="hover:text-gray-300">Contact Us</a>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="#"><svg class="w-6 h-6 text-white hover:text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg></a>
+                <a href="#"><svg class="w-6 h-6 text-white hover:text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path></svg></a>
+                <a href="#"><svg class="w-6 h-6 text-white hover:text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg></a>
+            </div>
+            <p class="text-center text-sm mt-4">© 2025 SkillBartr by Runtime Terrors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
