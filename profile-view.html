@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - SkillBartr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 font-poppins">
+    <header class="bg-white shadow-sm py-4 sticky top-0">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-2xl font-bold text-blue-600 animate-pulse">SkillBartr</h1>
+                <span class="text-sm font-semibold text-gray-600">by Runtime Terrors</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-6">
+                    <img src="https://source.unsplash.com/random/150x150/?portrait" alt="Profile Picture" class="w-24 h-24 rounded-full mr-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Alex Carter</h2>
+                        <p class="text-sm text-gray-600">4.8 ★★★★★</p>
+                        <p class="text-sm text-gray-600">Data Science, NYU</p>
+                    </div>
+                    <button id="editProfile" class="ml-auto bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300">Edit Profile</button>
+                </div>
+                <p class="mb-4 text-gray-600">Bio: Passionate about data and design, eager to trade skills and learn from peers!</p>
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Skills Offered</h3>
+                    <p class="text-gray-600">Python (Advanced), SQL (Intermediate)</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Skills Sought</h3>
+                    <p class="text-gray-600">UI/UX Design (Beginner), Machine Learning (Intermediate)</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Request a Skill</h3>
+                    <div class="flex space-x-2">
+                        <select id="requestSkill" class="p-3 border rounded-lg">
+                            <option value="python">Python</option>
+                            <option value="sql">SQL</option>
+                        </select>
+                        <select id="offerSkill" class="p-3 border rounded-lg">
+                            <option value="ui-ux">UI/UX Design</option>
+                            <option value="ml">Machine Learning</option>
+                        </select>
+                        <button id="sendRequest" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Send Request</button>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Bartr History</h3>
+                    <p class="text-gray-600">Bartered Python for UI/UX Design with Sam Lee - Completed</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">Bartr Requests</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-600">Sam Lee wants to learn Python, offers UI/UX Design</p>
+                            <div>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 mr-2">Approve</button>
+                                <button class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">Deny</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
